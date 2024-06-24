@@ -1,0 +1,184 @@
+*{
+    letter-spacing: 0.5px;
+    font-family: "Outfit", sans-serif
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    padding-block: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    border-radius: 5px;
+}
+.cardContainer{
+    width: 400px;
+    height: auto;
+    display: grid;
+    place-items: center;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    margin-block: 50px;
+    border-radius: 10px;
+}
+.equilibriumImage{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    transition: 0.5s;
+}
+.equilibrium{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+/* .equilibriumImage:hover .equilibrium {
+    z-index: 1;
+    opacity: 0.5;
+}
+.equilibriumImage:hover{
+    
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    opacity: 0.5;
+    z-index: 2;
+} */
+.view{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.7;
+    z-index: 1;
+    transition: 0.5s;
+}
+.view img {
+    height: 30px;
+    height: 30px;
+}
+.equilibriumImage:hover .view, .equilibrium:hover .view {
+    display: block;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.7;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    width: 300px;
+    height: auto;
+}
+.heading h1 {
+    font-size: 23px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+.heading p {
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+.priceContainer{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.price h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+.time h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+.details{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.horizontalRule{
+    width: 80%;
+    margin-block: 30px;
+    border: 1px solid hsl(215, 51%, 70%);
+}
+.footer {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footerPhoto {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.footerPhoto img {
+    width: 100%;
+    height: 100%;
+}
+.footerParagraph p {
+    color: hsl(215, 51%, 70%);
+}
+.footerParagraph p span {
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width:633px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .cardContainer{
+        width: 75%;
+    }
+    .equilibrium{
+        width: 85%;
+    }
+    .heading{
+        width: 85%;
+    }
+    .details{
+        width: 85%;
+    }
+
+}
+
+@media (max-width:410px) {
+    .equilibrium{
+        width: 90%;
+    }
+}
